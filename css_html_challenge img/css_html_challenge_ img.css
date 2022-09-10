@@ -1,0 +1,219 @@
+body{
+    margin: 0;
+}
+
+.container  {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* MENU */
+
+nav{
+    width: 980px;
+    margin: 0 auto;
+}
+
+nav:before {
+    content: " ";
+    width: 100%;
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 50px;
+}
+
+
+ul li {
+    display: inline;
+}
+
+li a {
+    color: rgb(220, 218, 218);
+    text-decoration: none;
+    line-height: 50px;
+    padding: 18px;
+    font-family:sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+    letter-spacing: 0.7px;
+    font-size: 15px;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* background imge */
+
+#home{
+    background-image: url(img/iphone-14.jpg);
+    height: 620px;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    margin-top: 0px;
+    top: 0;
+    text-align: center;
+    
+}
+
+.image_block{
+    padding: .5px 20px;
+    width: 290px;
+}
+
+.text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgb(26, 26, 26);
+    border-radius: 25px;
+    width: 85px;
+    height: 30px;
+}
+
+.text a {
+    text-decoration: none;
+    color: rgb(228, 228, 228)
+}
+
+.text a:hover{
+    color:white;
+   
+}
+/*   VIDEO   */
+
+.vido_section{
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+    position: relative;
+    text-align: center;
+}
+
+video{
+    display: block;
+    width: 430px;
+    margin: 30px auto;
+    z-index: 0;
+}
+
+.video-text{
+    background: rgba(0,0,0, .5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+
+
+.img-cont{
+  width: 100%;
+  height: 325px;
+}
+
+.img-cont img{
+    opacity: 1;
+    display: block;
+    margin-bottom:10px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-cont{
+    position: relative;
+    
+}
+
+img{
+    opacity: 1;
+    display: block;
+    width: 380px;
+    height: auto;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    transition: .5 ease;
+    backface-visibility: hidden;
+}
+
+.middle{
+    transition: .5 ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50% -50%);
+    text-align: center;
+}
+
+.img-cont:hover img{
+    opacity: 0.2;
+}
+
+.img-cont:hover .middle{
+    opacity: 1;
+}
+
+.middle_text{
+    background-color: rgb(33, 245, 174);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 12px;
+}
+
+.iphone-info{
+    margin-top: 45px;
+}
+
+
+table{
+    height: 30px;
+    border-collapse: collapse;
+    border: 1px solid skyblue;
+    padding: 50px;
+    margin: 10px auto;
+    margin-top: 15px;
+    width: 395px;
+}
+
+th,td{
+    padding: 8px;
+    text-align: center;
+    color: rgb(26, 26, 26);
+    background-color: aliceblue;
+}
+
+.check{color: rgb(198, 180, 121); 
+    text-decoration: none; }
+
+.check:hover{
+    color:rgb(53, 53, 53);
+    text-decoration:underline;
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 3px;
+}

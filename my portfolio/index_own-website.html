@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nikita Sazonov</title>
+</head>
+<body>
+  
+        <div class="Navbar">
+            <a href="home">Home</a>
+
+            <a href="About">About</a>
+
+            <a href="GitHub">GitHub</a>
+
+            <a href="Contact">Contact</a>
+        </div>    
+
+
+        <br>
+        <br>
+
+
+        <div id="home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="img/Typing.mp4"  loop muted autoplay>
+                Your Browser Does Not Support HTML5 Video.
+            </video>
+        </div>
+
+
+        <div class="Video_Text">
+            <h1 class="white_text">Your Name's Portfolio</h1>
+            <strong>
+                <p class="center"> 
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br> My name is Nikita. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+
+        <!--About Section-->
+
+        <div class="Row" id="About">
+            <!--Left Column-->
+            <div class="Column_2">
+                <img src="img/IMG_2061 - Edited.png" alt="">
+            </div>
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a software developer who loves to code! As a father of two, I enjoy time with my family and traveling. 
+                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. 
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+
+            </div>
+        </div>
+
+
+        <!--GitHub Section-->
+
+        <div class="Row" id="GitHub">
+            <!--Leftt Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/Nikita1-1" target="_blank">GitHub </a></p>
+                </p>
+            </div>
+
+            <div class="Column_2">
+                <a href="https://github.com/Nikita1-1" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+
+
+        <div class="Row" id="Contact"> 
+            <!--Contact image, Left Column-->
+            <div class="Column_2 Column_tall">
+                <img src="img/contact.jpg" alt="Contact image">
+            </div>
+            <!--Right Column, contact form-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action=" " nethod="POST"><!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <lable> Name:</lable>
+                        <input type="text" placeholder="Please enter your name here">
+                    <lable>Email: </lable>
+                        <input type="text"  id="Email" name="Email" placeholder="Please enter your email here">
+                    <lable>Message: </lable>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" placeholder="Submit">
+                </form>
+            </div>
+        </div>
+
+
+        <footer>
+            <p>
+                <p class="center">&copy Nikita_Sazonov, <a href="#" target="_blank">_NS_</a></p>
+                <br>
+            </p>
+        </footer>
+
+
+
+
+</body>
+</html>

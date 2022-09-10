@@ -1,0 +1,92 @@
+body {
+    background-color: #fff;
+}
+
+h1 {
+    color: rgba (8, 141, 165, 1);/* a - means transperent, the less the value the less you can see it*/
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rgba (0, 0, 0, 0.6);/* x(1px)-going to the right, y(.5px) -going up , (4px) - blure, rgba - color and transperent*/
+}
+
+.container {
+    width: 450px;
+    height: 450px;
+    background-color: #faebd7 ;
+    border: 2px solid black ;
+    border-radius: 5%;
+}
+
+.container .squares:nth-child(-n+4) { /*nth numbers of childes within the container class*/
+    background-image: url("icons2.png");
+    color: #fff;
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    cursor: pointer;
+    transition: transform .5s ease-in-out; 
+}
+
+
+.squares:nth-child(-n+4) p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;/*sets size of the font*/
+    font-weight: 900;
+    text-align: center;/* sets the text vertically Y */
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba (0,0,0,0.8);
+}
+
+.squares:nth-child(1) {
+    background: #4240ff;
+}
+
+.squares:nth-child(2) {
+    background: #8ac90c;
+}
+
+.squares:nth-child(3) {
+    background: #a1671bf2;
+}
+
+.squares:nth-child(4) {
+    background: #c22f06;
+}
+
+.container .squares:nth-child(-n+4):hover{
+    background-image: url("icons.png");
+    transform: scale(.5); /* scale making something smaller or bigger */
+    animation-name: race;/* set animation, race is name of the element we will use later*/
+    animation-duration: 2.5s;/* how long its gonna take for animation */
+    animation-iteration-count: infinite;/* how many times it will dod animation*/
+    animation-timing-function: cubic-bezier(2.5, .2, .3, .2);/* how long it takes every mometn of animation is moving */
+}
+
+.squares:nth-child(1):hover{
+    background: #13b4ff;
+}
+
+.squares:nth-child(2):hover {
+    background: #b2ff18;
+}
+
+.squares:nth-child(3):hover{
+    background: #ffb049;
+}
+
+.squares:nth-child(4):hover{
+    background: #ff693f;
+}
+
+
+@keyframes race {  /* this i how to animate */
+    0%, 100% {/* it shows that we start with 0% to 100%. TRANSLATE means MOVE  */
+        transform: translateY(0px) ;
+        background-image: url("icons.png")
+    }
+    50% { /* here 50% means that when css reach this 50% you can do something at this point  */
+        transform: translateY(300px);
+    }
+}
