@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type = "text/css" href="css/one_page_css.css">
-    <link rel="stylesheet"  href="css/one-page-website.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,200&display=swap" rel="stylesheet">
@@ -107,7 +106,55 @@
             </div>
         </section>
         
+        <section class="photo_scroll">
+            <h2>Our Daily Life</h2>
+            <div class="row">
+                <div class="column">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(1)"src="images/dily.jpg">
+                </div>
+                <div class="column">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(2)"src="images/daily_2.jpg">
+                </div>
+                <div class="column">
+                    <img class="hover-shadow" onclick="openModal();currentSlide(3)"src="images/daily_3.jpg">
+                </div>
+            </div>
+            
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="model-content">
+                <div class="mySlides">
+                    <div class="numbertext">1/4</div>
+                    <img class="overlay-ph"  src="images/dily.jpg" alt="">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2/4</div>
+                    <img  class="overlay-ph" src="images/daily_2.jpg" alt="">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3/4</div>
+                    <img  class="overlay-ph" src="images/daily_3.jpg" alt="">
+                </div>
+            
+                <a class='prev' onclick='plusSlides(-1)'>&#10094;</a>
+                <a class='next' onclick='plusSlides(1)' >&#10095;</a>
 
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="column">
+                    <img class="column-img" src="images/dily.jpg" class='demo cursor' onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="column-img" src="images/daily_2.jpg" class='demo cursor' onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="column-img" src="images/daily_3.jpg" class='demo cursor' onclick="currentSlide(3)">
+                </div>
+            </div>
+            </div> 
+        </section>
         <!--RSVP-->
 
         <section id="Online_Order">
@@ -120,10 +167,10 @@
                     <p class="rsvp-text">Please Provide Your Info</p>
                     <div class="form-rsvp">
                         <form action=" " method="post">
-                            <input class= "rsvp" type="text" value=" " placeholder="First Name">
-                            <input class= "rsvp" type="text" value=" " placeholder="Last Name">
+                            <input class= "rsvp" type="text" value="First Name " placeholder="First Name">
+                            <input class= "rsvp" type="text" value="Last Name" placeholder="Last Name">
                             <input class= "rsvp" type="email" value=" " placeholder="Email Address">
-                            <input class= "rsvp" type="text" value=" " placeholder="Phone Number">
+                            <input class= "rsvp" type="text" value="Phone Number" placeholder="Phone Number">
                         </form>
                         <div class="form_spacer">
                             <label class="terms">Terms And Conditions</label>
@@ -143,5 +190,8 @@
         <footer>
             DOMA Cafe&#x301; &nbsp; | &nbsp; &copy; 2022
         </footer>
+
+
+        <script src="JS/one_page_website.js"></script>
 </body>
 </html>
