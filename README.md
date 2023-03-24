@@ -13,6 +13,6 @@ In this repository you will find projects as: <br>
  This website was one of my initial of many other projects from bootcamp, where i had to learn how to make hover effect, structure of webpage, how display work. As well as how to create a navbar and attache a background picture. I did enjoy look for bugs that i have made and of course the whole process of creating the websites.
  
  
- I still continue educate myself with new techniques of how to use css to make website work faster, and how to write code less but more effective. 
+I still continue educate myself with new techniques of how to use css to make website work faster, and how to write code less but more effective. 
 
 I hope you will like it. Thank you!
